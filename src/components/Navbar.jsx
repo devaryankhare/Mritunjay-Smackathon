@@ -48,6 +48,18 @@ export default function Navbar() {
           </li>
           <li>
             <NavLink
+              to="/Landing"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-cyan-600"
+                  : "text-gray-600 hover:text-cyan-600 transition-colors duration-300"
+              }
+            >
+              Profile
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to="/first-aid"
               className={({ isActive }) =>
                 isActive
@@ -70,7 +82,7 @@ export default function Navbar() {
               Add Prescription
             </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 to="/seereports"
                 className={({ isActive }) =>
@@ -79,7 +91,7 @@ export default function Navbar() {
               >
                 See Reports
               </NavLink>
-            </li>
+            </li> */}
           <li>
             <NavLink
               to="/about"
