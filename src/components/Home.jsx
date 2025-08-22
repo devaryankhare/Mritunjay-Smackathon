@@ -172,7 +172,7 @@ export default function Home() {
       </section>
 
       {/* Footer Section */}
-      <section className="py-12 px-4 bg-gray-50">
+      {/* <section className="py-12 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-gray-600 mb-4">
             Ready to transform your healthcare experience?
@@ -181,7 +181,7 @@ export default function Home() {
             Get Started Today
           </button>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
