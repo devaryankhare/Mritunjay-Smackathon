@@ -10,12 +10,8 @@ export default function Navbar() {
   const [loading, setLoading] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
 
-<<<<<<< HEAD
-  // Loader timeout
-  setTimeout(() => {
-    setLoading(false);
-  }, 5000);
-=======
+
+
   // ESSENTIAL FIX: Loader logic is correctly placed in useEffect to prevent bugs.
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -23,7 +19,7 @@ export default function Navbar() {
     }, 2000);
     return () => clearTimeout(timer); // Cleanup timer
   }, []);
->>>>>>> 63364b3544655f2df40d1f0cc5ed05e14a8a4ea6
+
 
   if (loading) {
     return <Loader />;
