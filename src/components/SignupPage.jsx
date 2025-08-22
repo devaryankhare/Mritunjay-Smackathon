@@ -67,20 +67,19 @@ export default function SignupPage() {
       {/* Left side - branding */}
       <div
         id="img"
-        className="hidden md:flex w-1/2 relative overflow-hidden bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 items-center justify-center text-white p-10"
+        className="hidden md:flex w-1/2 relative overflow-hidden bg-gradient-to-br from-indigo-600 via-blue-500 to-pink-300 items-center justify-center text-white p-10"
       >
         {/* Blobs */}
-        <div className="absolute w-72 h-72 bg-pink-400 rounded-full mix-blend-multiply filter blur-3xl opacity-40 -top-10 -left-10 animate-pulse"></div>
+        <div className="absolute w-72 h-72 bg-cyan-400 rounded-full mix-blend-multiply filter blur-3xl opacity-40 -top-10 -left-10 animate-pulse"></div>
         <div className="absolute w-72 h-72 bg-indigo-400 rounded-full mix-blend-multiply filter blur-3xl opacity-40 bottom-0 right-0 animate-pulse"></div>
 
         {/* Content */}
         <div className="relative z-10 max-w-md text-center">
-          <h1 className="text-4xl font-extrabold mb-4 leading-tight drop-shadow-lg">
-            Join Our Community 🚀
+          <h1 className="text-5xl font-extrabold mb-4 leading-tight drop-shadow-lg">
+            Join <span className="text-cyan-300">Jeevan-Setu</span>
           </h1>
-          <p className="text-lg opacity-90">
-            Sign up and explore amazing features crafted just for you.  
-            Grow, connect, and build something great!
+          <p className="text-lg opacity-90 text-gray-900">
+            A world where no patient’s health is at risk due to missing information.
           </p>
         </div>
       </div>
@@ -141,7 +140,7 @@ export default function SignupPage() {
             {/* Submit */}
             <button
               type="submit"
-              className="w-full py-3 rounded-lg bg-gradient-to-r from-indigo-500 to-pink-500 text-white font-semibold shadow-md hover:opacity-90 transition"
+              className="w-full py-3 rounded-lg bg-gradient-to-r from-pink-500 to-blue-500 text-white font-semibold shadow-md hover:opacity-90 transition"
             >
               Sign Up
             </button>
