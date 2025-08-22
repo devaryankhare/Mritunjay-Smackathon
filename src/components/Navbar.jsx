@@ -60,6 +60,17 @@ export default function Navbar() {
             </NavLink>
           </li>
           <li>
+            <NavLink
+              to="/addprescription"
+              className={({ isActive }) =>
+               isActive ? "text-cyan-600" : "text-gray-600 hover:text-cyan-600 transition-colors duration-300"
+              }
+
+            >
+              Add Prescription
+            </NavLink>
+          </li>
+          <li>
             <NavLink to="/about" 
             className={({ isActive }) =>
               isActive ? "text-cyan-600" : "text-gray-600 hover:text-cyan-600 transition-colors duration-300"
