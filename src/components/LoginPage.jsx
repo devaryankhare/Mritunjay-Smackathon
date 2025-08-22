@@ -47,7 +47,7 @@ export default function LoginPage() {
         {/* Left side */}
         <div
           id="img"
-          className="relative overflow-hidden bg-gradient-to-br from-indigo-500 via-blue-500 to-gray-300 flex flex-col items-center justify-center text-center text-white py-20 px-6"
+          className="relative overflow-hidden bg-gradient-to-br from-indigo-600 via-blue-500 to-pink-300 flex flex-col items-center justify-center text-center text-white py-20 px-6"
         >
           {/* Floating blurred circles */}
           <div className="absolute w-72 h-72 bg-cyan-400 rounded-full mix-blend-multiply filter blur-3xl opacity-40 -top-10 -left-10 animate-pulse"></div>
@@ -109,7 +109,7 @@ export default function LoginPage() {
               {/* Submit */}
               <button
                 type="submit"
-                className="w-full py-3 rounded-lg bg-gradient-to-r from-indigo-500 to-pink-500 text-white font-semibold shadow-md hover:opacity-90 transition"
+                className="w-full py-3 rounded-lg bg-gradient-to-r from-pink-500 to-blue-500 text-white font-semibold shadow-md hover:opacity-90 transition"
               >
                 Login
               </button>
@@ -142,7 +142,7 @@ export default function LoginPage() {
               </div>
             <p className="text-center text-sm text-gray-600 mt-6">
               Don’t have an account?{" "}
-              <Link to="/signup" className="text-purple-600 hover:underline">
+              <Link to="/signup" className="text-blue-600 hover:underline">
                 Sign Up
               </Link>
             </p>
