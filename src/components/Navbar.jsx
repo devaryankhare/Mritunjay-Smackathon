@@ -32,6 +32,9 @@ export default function Navbar() {
   return (
     <nav className="bg-gradient-to-r from-white to-cyan-100 shadow-md">
       <div className="container mx-auto flex items-center justify-between px-6 py-3">
+        <img src="src/assets/images/pharmacy.png" className="h-10 w-10 object-contain ml-2"  alt="logo" />
+      <div className="container mx-auto flex items-center justify-between px-6 py-3">
+        
         {/* Logo - Kept original styling */}
         <div className="flex items-center space-x-2">
           <div className="text-cyan-600 font-bold text-xl">JEEVAN-SETU</div>
@@ -167,6 +170,8 @@ export default function Navbar() {
           </button>
         </div>
       </div>
+      </div>
+      
 
       {/* Mobile Menu */}
       {menuOpen && (
