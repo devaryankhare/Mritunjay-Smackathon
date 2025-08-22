@@ -47,19 +47,28 @@ export default function LoginPage() {
         {/* Left side */}
         <div
           id="img"
-          className="hidden md:flex w-1/2 relative overflow-hidden bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 items-center justify-center text-white p-10"
+          className="relative overflow-hidden bg-gradient-to-br from-indigo-500 via-blue-500 to-gray-300 flex flex-col items-center justify-center text-center text-white py-20 px-6"
         >
-          <div className="absolute w-72 h-72 bg-pink-400 rounded-full mix-blend-multiply filter blur-3xl opacity-40 -top-10 -left-10 animate-pulse"></div>
+          {/* Floating blurred circles */}
+          <div className="absolute w-72 h-72 bg-cyan-400 rounded-full mix-blend-multiply filter blur-3xl opacity-40 -top-10 -left-10 animate-pulse"></div>
           <div className="absolute w-72 h-72 bg-indigo-400 rounded-full mix-blend-multiply filter blur-3xl opacity-40 bottom-0 right-0 animate-pulse"></div>
-          <div className="relative z-10 max-w-md text-center">
-            <h1 className="text-4xl font-extrabold mb-4 leading-tight drop-shadow-lg">
-              Welcome Back 👋
+
+          {/* Content */}
+          <div className="relative z-10 max-w-2xl">
+            <h1 className="text-5xl font-extrabold mb-6 leading-tight drop-shadow-lg">
+              Welcome to <span className="text-cyan-400">Jeevan-Setu</span>
             </h1>
-            <p className="text-lg opacity-90">
-              Login to continue your journey with us. Stay connected, explore, and grow together!
+            <p className="text-xl text-black opacity-90 mb-6">
+              Bridging health, technology, and community – your partner in better living.
             </p>
+
+            {/* Call to Action */}
+            {/* <button className="bg-white text-blue-600 font-semibold px-6 py-3 rounded-2xl shadow-lg hover:bg-blue-100 transition">
+              Get Started
+            </button> */}
           </div>
         </div>
+
         {/* Right side - login form */}
         <div className="flex w-full md:w-1/2 items-center justify-center bg-gray-50 p-6">
           <div className="w-full max-w-md bg-white rounded-2xl shadow-xl p-8">

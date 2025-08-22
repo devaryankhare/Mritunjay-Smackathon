@@ -1,12 +1,18 @@
-import React, { useState } from "react";
+import React, { useState } from "react"; // No need for useEffect anymore
+import { toast } from "react-toastify";
 
 export default function PxForm() {
+  const LOCAL_STORAGE_KEY = "patientPrescriptionForm";
+
+  // We change useState to no longer load drafts, just start empty.
   const [form, setForm] = useState({
     doctorName: "",
     note: "",
     prescriptionFile: null,
     reportsFile: null,
   });
+
+  // We REMOVE the useEffect hook entirely, as we will now save manually.
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
@@ -20,16 +26,30 @@ export default function PxForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form Submitted:", form);
-    alert("Form submitted successfully!");
+
+    // 1. Manually save the final, correct data to localStorage.
+    // We create a version without the file objects for saving.
+    const dataToSave = { ...form, prescriptionFile: null, reportsFile: null };
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(dataToSave));
+
+    // 2. Now that the data is safely saved, we can clear the form.
+    setForm({
+      doctorName: "",
+      note: "",
+      prescriptionFile: null,
+      reportsFile: null,
+    });
+    
+    toast.success("Prescription submitted and saved successfully!");
   };
 
+  // The JSX for the return() statement remains exactly the same...
   return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-white via-blue-100 to-blue-200">
       <div className="w-full max-w-2xl bg-white shadow-xl rounded-2xl p-8 transition hover:shadow-2xl">
         <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">
           Patient Prescription Form
         </h2>
-
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Doctor Name */}
           <div>
