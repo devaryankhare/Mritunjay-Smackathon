@@ -24,7 +24,7 @@ export default function LoginPage() {
     try {
       await signInWithEmailAndPassword(auth, email,password);
       toast.success("Logged in successfully!", { position: "top-center" });
-      navigate("/");
+      navigate("/landing");
     } catch (error) {
       toast.error(`Login failed: ${error.message}`, { position: "top-center" });
     }
@@ -36,7 +36,7 @@ export default function LoginPage() {
     try {
       await signInWithPopup(auth, provider);
       toast.success("Logged in with Google!", { position: "top-center" });
-      navigate("/");
+      navigate("/landing");
     } catch (error) {
       toast.error(`Google Login Error: ${error.message}`, { position: "top-center" });
     }

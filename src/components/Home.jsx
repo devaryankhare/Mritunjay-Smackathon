@@ -39,14 +39,14 @@ export default function Home() {
             <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-[0_8px_25px_rgba(103,232,249,0.3)] transition-all duration-300 transform hover:-translate-y-1">
               <div className="mb-6">
                 <div className="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-cyan-600 text-2xl"></span>
+                  <span className="text-cyan-600 text-2xl"><img src="src/assets/images/patient.png" alt="" /></span>
                 </div>
                 <h3 className="text-xl font-semibold text-cyan-800 mb-3">
-                  AI Diet Planning
+                  Record Management
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Personalized meal plans generated with AI, tailored to patient health
-                  conditions and lifestyle needs.
+                  Efficiently manage and track patient records, ensuring easy access to
+                  medical history and treatment plans.
                 </p>
               </div>
             </div>
@@ -55,14 +55,13 @@ export default function Home() {
             <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-[0_8px_25px_rgba(103,232,249,0.3)] transition-all duration-300 transform hover:-translate-y-1">
               <div className="mb-6">
                 <div className="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-cyan-600 text-2xl"></span>
+                  <span className="text-cyan-600 text-2xl"><img src="src/assets/images/sos.png" alt="" /></span>
                 </div>
                 <h3 className="text-xl font-semibold text-cyan-800 mb-3">
-                  Govt. Sanitation Insights
+                  SOS QR Code
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Enable government agencies to use anonymized health data to identify
-                  patterns and improve sanitation in local communities.
+                      Each patient has a QR code containing emergency contacts and first aid activities for quick access in case of emergencies.
                 </p>
               </div>
             </div>
@@ -71,14 +70,14 @@ export default function Home() {
             <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-[0_8px_25px_rgba(103,232,249,0.3)] transition-all duration-300 transform hover:-translate-y-1">
               <div className="mb-6">
                 <div className="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-cyan-600 text-2xl"></span>
+                  <span className="text-cyan-600 text-2xl"><img src="src/assets/images/medical-records.png" alt="" /></span>
                 </div>
                 <h3 className="text-xl font-semibold text-cyan-800 mb-3">
-                  Wearable Integration
+                  Patient Lab Reports
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Seamless integration with smartwatches and fitness trackers to keep
-                  medical records updated with real-time health data.
+                  View and manage lab reports with ease, ensuring accurate and up-to-date
+                  health information.
                 </p>
               </div>
             </div>
@@ -118,7 +117,7 @@ export default function Home() {
             <div className="bg-gradient-to-br from-cyan-50 to-blue-50 p-8 rounded-2xl border-2  border-cyan-200 hover:border-cyan-300 transition-all duration-300">
               <div className="mb-6">
                 <div className="w-12 h-12 bg-cyan-200 rounded-lg flex items-center justify-center mb-4 opacity-70">
-                  <span className="text-cyan-700 text-2xl"></span>
+                  <span className="text-cyan-700 text-2xl"><img src="src/assets/images/WhatsApp Image 2025-08-23 at 00.58.01_08d0696f.jpg" alt="" /></span>
                 </div>
                 <h3 className="text-xl font-semibold text-cyan-800 mb-3">
                   AI Diet Planning
@@ -136,7 +135,7 @@ export default function Home() {
             <div className="bg-gradient-to-br from-cyan-50 to-blue-50 p-8 rounded-2xl border-2  border-cyan-200 hover:border-cyan-300 transition-all duration-300">
               <div className="mb-6">
                 <div className="w-12 h-12 bg-cyan-200 rounded-lg flex items-center justify-center mb-4 opacity-70">
-                  <span className="text-cyan-700 text-2xl"></span>
+                  <span className="text-cyan-700 text-2xl"><img src="src/assets/images/WhatsApp Image 2025-08-23 at 00.54.35_1ac25cb6.jpg" alt="" /></span>
                 </div>
                 <h3 className="text-xl font-semibold text-cyan-800 mb-3">
                  Govt. Sanitation Insights
@@ -154,7 +153,7 @@ export default function Home() {
             <div className="bg-gradient-to-br from-cyan-50 to-blue-50 p-8 rounded-2xl border-2  border-cyan-200 hover:border-cyan-300 transition-all duration-300">
               <div className="mb-6">
                 <div className="w-12 h-12 bg-cyan-200 rounded-lg flex items-center justify-center mb-4 opacity-70">
-                  <span className="text-cyan-700 text-2xl"></span>
+                  <span className="text-cyan-700 text-2xl"><img src="src/assets/images/WhatsApp Image 2025-08-23 at 00.56.33_002d893f.jpg" alt="" /></span>
                 </div>
                 <h3 className="text-xl font-semibold text-cyan-800 mb-3">
                  Wearable Integration

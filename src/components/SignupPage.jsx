@@ -34,7 +34,7 @@ export default function SignupPage() {
           createdAt: new Date(),
         });
         toast.success("Account created successfully!", { position: "top-center" });
-        navigate("/");
+        navigate("/landing");
       }
     } catch (error) {
       toast.error(`Error: ${error.message}`, { position: "top-center" });
@@ -55,7 +55,7 @@ export default function SignupPage() {
           createdAt: new Date(),
         });
         toast.success("Signed up with Google!", { position: "top-center" });
-        navigate("/");
+        navigate("/landing");
       }
     } catch (error) {
       toast.error(`Google Sign Up Error: ${error.message}`, { position: "top-center" });

@@ -104,7 +104,7 @@ export default function Navbar() {
                 >
                   About
                 </NavLink>
-              </li>
+                </li>
             </>
           ) : (
             // If logged out, only show Home link as requested (optional, can be removed)
