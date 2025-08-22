@@ -8,8 +8,10 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import FirstAid from './components/FirstAid.jsx';
 
+
 import { createBrowserRouter,createRoutesFromElements ,Route, RouterProvider} from 'react-router-dom';
 import { AuthProvider } from '../src/components/AuthProvider.jsx';
+import PxForm from './components/PxForm.jsx';
 
 
 const router = createBrowserRouter(
@@ -21,6 +23,7 @@ const router = createBrowserRouter(
       <Route path='/' element={<Home />} />
       <Route path='about' element={<About />} />
       <Route path='first-aid' element={<FirstAid />} />
+      <Route path='addprescription' element={<PxForm />} />
 
     
 
