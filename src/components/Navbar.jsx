@@ -13,7 +13,7 @@ export default function Navbar() {
   const [loading, setLoading] = useState(true);
   setTimeout(() => {
     setLoading(false);
-  }, 2000);
+  }, 5000);
 
   if (loading) {
     return <Loader />;
