@@ -1,7 +1,6 @@
 // Home.jsx
 import React from "react";
-
-
+import { ReactTyped } from "react-typed";
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-gray-900">
@@ -14,43 +13,51 @@ export default function Home() {
         <br />
         <br />
         <h2 className="text-4xl md:text-5xl font-bold text-cyan-600 mb-6">
-          Upcoming Features
+          <ReactTyped
+            strings={[
+              "Upcoming Features",
+              "AI Integration",
+              "Govt. Sanitation Insights",
+              " Wearable Integration",
+            ]}
+            typeSpeed={100}   // typing speed
+            backSpeed={60}    // deleting speed
+            loop={true}       // keep repeating
+            showCursor={true} // show blinking cursor
+            cursorChar="|"    // customize cursor
+          />
         </h2>
-        {/* <button className="bg-cyan-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
-          Get Started
-        </button> */}
       </section>
 
       {/* Features Section */}
-        <section className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 px-6 max-w-5xl">
-          <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-[0_4px_10px_#67e8f9] transition aspect-square flex flex-col justify-center">
-            <h2 className="text-xl font-semibold mb-2">⚛️ Fast</h2>
-            <p className="text-gray-600">Optimized performance with React + Tailwind.</p>
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-[0_4px_10px_#67e8f9] transition aspect-square flex flex-col justify-center">
-            <h2 className="text-xl font-semibold mb-2">🎨 Modern</h2>
-            <p className="text-gray-600">Clean and modern UI design out of the box.</p>
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-[0_4px_10px_#67e8f9] transition aspect-square flex flex-col justify-center">
-            <h2 className="text-xl font-semibold mb-2">⚡ Easy</h2>
-            <p className="text-gray-600">Simple structure to get started quickly.</p>
-          </div>
-        </section>
+      <section className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 px-6 max-w-5xl">
+        {/* Feature 1 */}
+        <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-[0_4px_10px_#67e8f9] transition aspect-square flex flex-col justify-center">
+          <h2 className="text-xl text-cyan-800 font-semibold mt-1 mb-8"> AI Diet Planning</h2>
+          <p className="text-gray-600">
+            Personalized meal plans generated with AI, tailored to patient health
+            conditions and lifestyle needs.
+          </p>
+        </div>
 
-        {/* <section className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 px-6 max-w-5xl">
-          <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-[0_4px_10px_#67e8f9] transition aspect-square flex flex-col justify-center">
-            <h2 className="text-xl font-semibold mb-2">⚛️ Fast</h2>
-            <p className="text-gray-600">Optimized performance with React + Tailwind.</p>
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-[0_4px_10px_#67e8f9] transition aspect-square flex flex-col justify-center">
-            <h2 className="text-xl font-semibold mb-2">🎨 Modern</h2>
-            <p className="text-gray-600">Clean and modern UI design out of the box.</p>
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-[0_4px_10px_#67e8f9] transition aspect-square flex flex-col justify-center">
-            <h2 className="text-xl font-semibold mb-2">⚡ Easy</h2>
-            <p className="text-gray-600">Simple structure to get started quickly.</p>
-          </div>
-        </section> */}
+        {/* Feature 2 */}
+        <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-[0_4px_10px_#67e8f9] transition aspect-square flex flex-col justify-center">
+          <h2 className="text-xl text-cyan-800 font-semibold mt-1 mb-8"> Govt. Sanitation Insights</h2>
+          <p className="text-gray-600">
+            Enable government agencies to use anonymized health data to identify
+            patterns and improve sanitation in local communities.
+          </p>
+        </div>
+
+        {/* Feature 3 */}
+        <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-[0_4px_10px_#67e8f9] transition aspect-square flex flex-col justify-center">
+          <h2 className="text-xl text-cyan-800 font-semibold mt-1 mb-8"> Wearable Integration</h2>
+          <p className="text-gray-600">
+            Seamless integration with smartwatches and fitness trackers to keep
+            medical records updated with real-time health data.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
