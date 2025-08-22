@@ -12,6 +12,7 @@ import SeeReports from './components/SeeReports.jsx';
 import { createBrowserRouter,createRoutesFromElements ,Route, RouterProvider} from 'react-router-dom';
 import { AuthProvider } from '../src/components/AuthProvider.jsx';
 import PxForm from './components/PxForm.jsx';
+import LandingPage from './components/LandingPage.jsx';
 
 
 const router = createBrowserRouter(
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
       <Route path='first-aid' element={<FirstAid />} />
       <Route path='addprescription' element={<PxForm />} />
       <Route path='seereports' element={<SeeReports />} />
+      <Route path='landing' element={<LandingPage />} />
 
     </Route>
     
