@@ -6,6 +6,7 @@ import SignupPage from './components/SignupPage.jsx';
 import LoginPage from './components/LoginPage.jsx';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import FirstAid from './components/FirstAid.jsx';
 
 import { createBrowserRouter,createRoutesFromElements ,Route, RouterProvider} from 'react-router-dom';
 import { AuthProvider } from '../src/components/AuthProvider.jsx';
@@ -19,8 +20,9 @@ const router = createBrowserRouter(
     <Route path='/' element={<Layout />}>
       <Route path='/' element={<Home />} />
       <Route path='about' element={<About />} />
-        
-       
+      <Route path='first-aid' element={<FirstAid />} />
+
+    
 
     </Route>
     

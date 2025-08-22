@@ -29,7 +29,7 @@ export default function Navbar() {
         <div className="flex items-center space-x-2">
           {/* Replace with your logo */}
           <div className="text-cyan-600 font-bold text-xl">
-            SAMPLE
+            JEEVAN-SETU
           </div>
         </div>
         
@@ -46,6 +46,17 @@ export default function Navbar() {
 
             >
               Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/first-aid"
+              className={({ isActive }) =>
+               isActive ? "text-cyan-600" : "text-gray-600 hover:text-cyan-600 transition-colors duration-300"
+              }
+
+            >
+              Frist-Aid
             </NavLink>
           </li>
           <li>
