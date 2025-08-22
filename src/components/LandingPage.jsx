@@ -57,12 +57,11 @@ export default function LandingPage() {
           transition={{ duration: 0.5 }}
           className="bg-white/90 backdrop-blur-md shadow-xl rounded-2xl p-8 flex flex-col md:flex-row items-center gap-8 hover:shadow-2xl transition"
         >
-          <motion.img
-            src="https://randomuser.me/api/portraits/men/32.jpg"
+          <img
+            src="https://static.vecteezy.com/system/resources/thumbnails/005/544/718/small_2x/profile-icon-design-free-vector.jpg"
             alt="User"
             className="w-36 h-36 rounded-full border-4 border-blue-500 shadow-lg"
-            animate={{ y: [0, -8, 0] }}
-            transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+           
           />
           <div className="flex-1">
             <h2 className="text-2xl font-bold text-gray-800 mb-2">Patient Profile</h2>
@@ -109,8 +108,8 @@ export default function LandingPage() {
                 key={visit.id}
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-                whileHover={{ scale: 1.05, rotate: -1 }}
+                transition={{ duration: 0.2, delay: index * 0.1 }}
+                whileHover={{ scale: 1.05}}
                 className="bg-white/95 backdrop-blur-sm border border-blue-100 shadow-md rounded-xl p-5 hover:shadow-2xl hover:border-blue-400 transition flex flex-col"
               >
                 <div className="flex-grow">
