@@ -18,9 +18,22 @@ export default function Home() {
       {/* Current Features Section */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+          <h2 className="text-4xl md:text-5xl font-bold text-cyan-600 mb-8 min-h-[80px] flex items-center justify-center">
             Current Features
-          </h2>
+          
+          {/* <h2 className="text-4xl md:text-5xl font-bold text-cyan-600 mb-8 min-h-[80px] flex items-center justify-center"> */}
+              <ReactTyped
+                strings={[
+                  ".",
+                ]}
+                typeSpeed={100}
+                backSpeed={100}
+                loop={true}
+                showCursor={true}
+                cursorChar="."
+              />
+            </h2>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Feature 1 */}
             <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-[0_8px_25px_rgba(103,232,249,0.3)] transition-all duration-300 transform hover:-translate-y-1">
@@ -78,12 +91,15 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-cyan-600 mb-8 min-h-[80px] flex items-center justify-center">
+              Upcoming Features
+              </h2>
+              <h2 className="text-4xl md:text-5xl font-bold text-cyan-600 mb-8 min-h-[80px] flex items-center justify-center">
               <ReactTyped
                 strings={[
-                  "Upcoming Features",
+                  
                   "AI Integration",
-                  "Advanced Analytics", 
-                  "Telemedicine Support",
+                  "Govt. Sanitation Insights",
+                  "Wearable Integration",
                 ]}
                 typeSpeed={100}
                 backSpeed={60}
@@ -99,7 +115,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Upcoming Feature 1 */}
-            <div className="bg-gradient-to-br from-cyan-50 to-blue-50 p-8 rounded-2xl border-2 border-dashed border-cyan-200 hover:border-cyan-300 transition-all duration-300">
+            <div className="bg-gradient-to-br from-cyan-50 to-blue-50 p-8 rounded-2xl border-2  border-cyan-200 hover:border-cyan-300 transition-all duration-300">
               <div className="mb-6">
                 <div className="w-12 h-12 bg-cyan-200 rounded-lg flex items-center justify-center mb-4 opacity-70">
                   <span className="text-cyan-700 text-2xl"></span>
@@ -117,17 +133,16 @@ export default function Home() {
             </div>
 
             {/* Upcoming Feature 2 */}
-            <div className="bg-gradient-to-br from-cyan-50 to-blue-50 p-8 rounded-2xl border-2 border-dashed border-cyan-200 hover:border-cyan-300 transition-all duration-300">
+            <div className="bg-gradient-to-br from-cyan-50 to-blue-50 p-8 rounded-2xl border-2  border-cyan-200 hover:border-cyan-300 transition-all duration-300">
               <div className="mb-6">
                 <div className="w-12 h-12 bg-cyan-200 rounded-lg flex items-center justify-center mb-4 opacity-70">
                   <span className="text-cyan-700 text-2xl"></span>
                 </div>
                 <h3 className="text-xl font-semibold text-cyan-800 mb-3">
-                  Telemedicine Platform
+                 Govt. Sanitation Insights
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Integrated video consultations with healthcare providers, 
-                  prescription management, and follow-up scheduling.
+                  Enable government agencies to use anonymized health data to identify patterns and improve sanitation in local communities.
                 </p>
               </div>
               <span className="inline-block bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-sm font-medium">
@@ -136,17 +151,16 @@ export default function Home() {
             </div>
 
             {/* Upcoming Feature 3 */}
-            <div className="bg-gradient-to-br from-cyan-50 to-blue-50 p-8 rounded-2xl border-2 border-dashed border-cyan-200 hover:border-cyan-300 transition-all duration-300">
+            <div className="bg-gradient-to-br from-cyan-50 to-blue-50 p-8 rounded-2xl border-2  border-cyan-200 hover:border-cyan-300 transition-all duration-300">
               <div className="mb-6">
                 <div className="w-12 h-12 bg-cyan-200 rounded-lg flex items-center justify-center mb-4 opacity-70">
                   <span className="text-cyan-700 text-2xl"></span>
                 </div>
                 <h3 className="text-xl font-semibold text-cyan-800 mb-3">
-                  Family Health Dashboard
+                 Wearable Integration
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Comprehensive family health monitoring with shared records,
-                  vaccination tracking, and emergency contact integration.
+                  Seamless integration with smartwatches and fitness trackers to keep medical records updated with real-time health data.
                 </p>
               </div>
               <span className="inline-block bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-sm font-medium">
