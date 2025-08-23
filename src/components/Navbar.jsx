@@ -105,6 +105,18 @@ export default function Navbar() {
                   About
                 </NavLink>
                 </li>
+                 <li>
+                <NavLink
+                  to="/diet-planner"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-cyan-600"
+                      : "text-gray-600 hover:text-cyan-600 transition-colors duration-300"
+                  }
+                >
+                  Diet plan
+                </NavLink>
+                </li>
             </>
           ) : (
             // If logged out, only show Home link as requested (optional, can be removed)

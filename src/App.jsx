@@ -13,6 +13,7 @@ import { createBrowserRouter,createRoutesFromElements ,Route, RouterProvider} fr
 import { AuthProvider } from '../src/components/AuthProvider.jsx';
 import PxForm from './components/PxForm.jsx';
 import LandingPage from './components/LandingPage.jsx';
+import DietPlanner from './components/DietPlanner.jsx';
 
 
 const router = createBrowserRouter(
@@ -26,7 +27,8 @@ const router = createBrowserRouter(
       <Route path='first-aid' element={<FirstAid />} />
       <Route path='addprescription' element={<PxForm />} />
       <Route path='seereports' element={<SeeReports />} />
-      <Route path='landing' element={<LandingPage />} />
+        <Route path='landing' element={<LandingPage />} />
+        <Route path='diet-planner' element={<DietPlanner />} />
 
     </Route>
     
