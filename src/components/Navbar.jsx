@@ -32,7 +32,7 @@ export default function Navbar() {
   return (
     <nav className="bg-gradient-to-r from-white to-cyan-100 shadow-md">
       <div className="container mx-auto flex items-center justify-between px-6 py-3">
-        <img src="src/assets/images/pharmacy.png" className="h-10 w-10 object-contain ml-2"  alt="logo" />
+        <img src="/assets/images/pharmacy.png" className="h-10 w-10 object-contain ml-2"  alt="logo" />
       <div className="container mx-auto flex items-center justify-between px-6 py-3">
         
         {/* Logo - Kept original styling */}

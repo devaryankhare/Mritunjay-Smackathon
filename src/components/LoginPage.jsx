@@ -126,7 +126,7 @@ export default function LoginPage() {
                 >
                   {/* Google Icon - Left aligned */}
                   <img 
-                    src="src/assets/images/google.png" 
+                    src="/assets/images/google.png" 
                     alt="Google" 
                     className="w-6 h-6 flex-shrink-0 hover:scale-110 transition-transform duration-200"
                   />
