@@ -1,6 +1,6 @@
 // Home.jsx
-import React from "react";
 import { ReactTyped } from "react-typed";
+import HealthCardSection from "./HealthCardSection";
 
 export default function Home() {
   return (
@@ -84,6 +84,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <HealthCardSection/>
 
       {/* Upcoming Features Section */}
       <section className="py-16 px-4 bg-white">
