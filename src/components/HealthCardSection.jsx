@@ -44,10 +44,7 @@ export default function HealthCardSection() {
                 <p className="text-xs opacity-90">Age</p>
                 <p className="text-sm font-semibold">28</p>
               </div>
-              <div>
-                <p className="text-xs opacity-90">Allergies</p>
-                <p className="text-sm font-semibold">Penicillin</p>
-              </div>
+          
             </div>
 
             {/* Bottom Section */}
