@@ -1,12 +1,20 @@
-# React + Vite
+Jeevan-Setu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Your comprehensive healthcare companion for modern wellness.
 
-Currently, two official plugins are available:
+Jeevan-Setu is a digital healthcare platform designed to provide secure, accessible, and instant medical information to patients, doctors, and emergency responders. With features like patient record management, SOS QR codes, and lab report tracking, it empowers individuals to take control of their health while ensuring doctors have the right information when it matters most.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+Tech Stack
+Frontend: React.js + Tailwind CSS
+Backend: Firebase / Node.js (optional, depending on setup)
+Database: Firebase Firestore / MongoDB
+Authentication: Firebase Auth / OAuth
+Deployment: Vercel 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+Benefits
+Immediate help in medical emergencies
+Fast decision-making for doctors
+Safe & private storage of health data
+Peace of mind for families
